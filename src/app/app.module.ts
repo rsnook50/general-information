@@ -4,8 +4,8 @@ import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { WelcomeComponent } from './home/welcome.component';
 import { NavigationListComponent } from './navigation/navigation-list.component';
+import { WelcomeComponent } from './home/welcome.component';
 
 @NgModule({
   declarations: [
