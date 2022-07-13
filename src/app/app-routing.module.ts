@@ -4,8 +4,12 @@ import { WelcomeComponent } from './home/welcome.component';
 
 const routes: Routes = [
   { 
-    path: "welcome", 
+    path: "", 
     component: WelcomeComponent 
+  },
+  {
+    path: "resume",
+    loadChildren: () => import("./resume/resume.module").then(m => m.ResumeModule)
   }
 ];
 

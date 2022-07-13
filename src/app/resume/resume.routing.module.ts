@@ -1,7 +1,17 @@
-import { Routes } from "@angular/router";
+import { NgModule } from "@angular/core";
+import { RouterModule, Routes } from "@angular/router";
+import { ResumeComponent } from "./resume.component";
 
-export const ResumeRoutes: Routes = [
+const routes: Routes = [
     {
-        path: "resume"
+        path: "",
+        component: ResumeComponent
     }
 ]
+
+@NgModule({
+    imports: [RouterModule.forChild(routes)],
+    exports: [RouterModule]
+  })
+
+export class ResumeRoutingModule {}
