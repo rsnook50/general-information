@@ -1,0 +1,20 @@
+<div class="table-responsive">
+    <table class="table" *ngIf="opportunities.length">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Title</th>
+                <th>Company</th>
+                <th>Duration</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let opportunity of opportunities">
+                <td><a routerLink="['/opportunities', opportunity.id]">View</a></td>
+                <td>{{opportunity.title}}</td>
+                <td>{{opportunity.companyName}}</td>
+                <td>{{opportunity.startDate}} - {{opportunity.endDate || "Present"}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
