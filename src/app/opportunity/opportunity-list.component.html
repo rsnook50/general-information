@@ -1,20 +1,9 @@
-<div class="table-responsive">
-    <table class="table" *ngIf="opportunities.length">
-        <thead>
-            <tr>
-                <th></th>
-                <th>Title</th>
-                <th>Company</th>
-                <th>Duration</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let opportunity of opportunities">
-                <td><a routerLink="['/opportunities', opportunity.id]">View</a></td>
-                <td>{{opportunity.title}}</td>
-                <td>{{opportunity.companyName}}</td>
-                <td>{{opportunity.startDate}} - {{opportunity.endDate || "Present"}}</td>
-            </tr>
-        </tbody>
-    </table>
+<div *ngIf="opportunities.length">
+    <div *ngFor="let opportunity of opportunities" class="card">
+        <div class="card-body">
+            <h5 class="card-title">{{opportunity.title}}</h5>
+            <h6 class="card-text">{{opportunity.companyName}}</h6>
+            <h6 class="card-text">{{opportunity.startDate}} - {{opportunity.endDate || "Present"}}</h6>
+        </div>
+    </div>
 </div>
