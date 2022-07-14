@@ -2,12 +2,12 @@ import { Component } from "@angular/core";
 import { IOpportunity } from "./opportunity";
 
 @Component({
-    selector: "app-opportunity-list",
+    selector: "app-opportunity-summary",
     templateUrl: "./opportunity-list.component.html",
     styleUrls: ["./opportunity-list.component.css"]
 })
 
-export class OpportunityListCompoent {
+export class OpportunitySummaryComponent {
     opportunities: IOpportunity[] = [
         {
             "title": "Applications Architect",
@@ -38,24 +38,6 @@ export class OpportunityListCompoent {
             "companyName": "Rezult",
             "startDate": "May 2013",
             "endDate": "July 2016"
-        },
-        {
-            "title": "Web Developer",
-            "companyName": "Stericycle",
-            "startDate": "September 2011",
-            "endDate": "May 2013"
-        },
-        {
-            "title": "IT Specialist",
-            "companyName": "Sylink LLC.",
-            "startDate": "February 2007",
-            "endDate": "September 2011"
-        },
-        {
-            "title": "IT Lead",
-            "companyName": "Centrex Plastics",
-            "startDate": "June 2006",
-            "endDate": "December 2006"
         }
     ];
 }
