@@ -1,5 +1,5 @@
-import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
+import { SharedModule } from "../shared/shared.module";
 
 import { OpportunityListCompoent } from "./opportunity-list.component";
 import { OpportunityRoutingModule } from "./opportunity.routing.module";
@@ -9,7 +9,7 @@ import { OpportunityRoutingModule } from "./opportunity.routing.module";
         OpportunityListCompoent
     ],
     imports: [
-        CommonModule,
+        SharedModule,
         OpportunityRoutingModule
     ],
     exports: [
