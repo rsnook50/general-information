@@ -28,11 +28,11 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Docker stuff.
 
-Easy Peasy once you have docker installed, build the image with this
+Easy Peasy once you have docker installed, run this in terminal
 
-docker build --tag general-information-image .                                    
+For Local - Dev
+docker-compose -f docker.compose.yml -f docker.compose.dev.yml  up -d
 
-and run this 
+For Production
 
-
-docker run -d -p 4201:4200 -v ${pwd}:/app:ro -v /app/node_modules --name general-information-app general-information-image
+docker-compose -f docker.compose.yml -f docker.compose.prod.yml  up -d

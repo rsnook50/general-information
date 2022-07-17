@@ -1,0 +1,12 @@
+version: "3"
+services:
+  general-information-app:
+    build: 
+      context: .
+      args: 
+        NODE_ENV: development
+    volumes:
+      - ./:/app:ro
+      - /app/node_modules
+    environment:
+      - NODE-ENV=development

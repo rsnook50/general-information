@@ -1,0 +1,8 @@
+version: "3"
+services:
+  general-information-app:
+    build: .
+    ports:
+      - "4201:4200"
+    environment:
+      - PORT=4200
