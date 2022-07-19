@@ -1,19 +1,10 @@
-FROM node:alpine
-
-WORKDIR /app
-
-COPY package.json .
-
-ARG NODE_ENV
-RUN if [ "$NODE_ENV" = "development"]; \
-    then npm install; \
-    else npm install --only=production; \
-    fi
-
+FROM node:alpine AS app-build
+WORKDIR /usr/src/app
+COPY package*.json ./
+RUN npm ci
 COPY . .
+RUN npm run build
 
-ENV PORT 4200
-
-EXPOSE $PORT
-
-CMD /app/node_modules/.bin/ng serve --host 0.0.0.0 --disable-host-check
+FROM nginx:alpine
+COPY --from=app-build usr/src/app/dist/general-information usr/share/nginx/html
+EXPOSE 80
