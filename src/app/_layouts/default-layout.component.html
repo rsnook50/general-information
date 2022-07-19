@@ -1,0 +1,23 @@
+<div id="viewport">
+    <!-- Sidebar -->
+    <div id="sidebar">
+      <header>
+        <a class="nav-link" routerLink="/"><i class="fa-solid fa-house"></i> General Information</a>
+      </header>
+      <ul class="nav">
+        <li><a class="nav-link" routerLink="/about"><i class="fa-solid fa-user"></i>About Me</a></li>
+        <li><a class="nav-link" routerLink="/resume"><i class="fa-solid fa-file"></i>Resume</a></li>
+        <li><a class="nav-link" routerLink="/opportunities"><i class="fa-solid fa-arrow-up-right-dots"></i>Opportunities</a></li>
+      </ul>
+    </div>
+    <!-- Content -->
+    <div id="content">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+        </div>
+    </nav>
+      <div class="container-fluid">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
