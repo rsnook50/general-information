@@ -30,9 +30,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 Easy Peasy once you have docker installed, run this in terminal
 
-For Local - Dev
-docker-compose -f docker.compose.yml -f docker.compose.dev.yml  up -d
-
-For Production
-
-docker-compose -f docker.compose.yml -f docker.compose.prod.yml  up -d
+docker-compose -f docker.compose.yml -f docker.compose.yml  up -d
