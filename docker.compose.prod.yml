@@ -1,9 +1,0 @@
-version: "3"
-services:
-  general-information-app:
-    build: 
-      context: .
-      args: 
-        NODE_ENV: production
-    environment:
-      - NODE-ENV=production
