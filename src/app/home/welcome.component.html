@@ -1,4 +1,44 @@
-<h1>Welcome!</h1>
-
-<p>This website gives general information</p>
-<p>Feel free to click around and browse my <a routerLink="/about">About Me</a> and my <a routerLink="/resume">Resume</a> pages.</p>
+<div class="row">
+    <div class="col-3"></div>
+    <div class="col-6">
+        <div class="card banner">
+            <div class="card-body">
+                <h2 class="card-title text-center">Welcome</h2>
+                <h4 class="card-text">My name is Richard Snook.  I am a developer based out of the United States.</h4>
+            </div>
+        </div>
+    </div>
+    <div class="col-3"></div>
+</div>
+<div class="row">
+    <div class="col-4">
+        <div class="card">
+            <h3 class="card-header">Personal</h3>
+            <div class="card-body">
+                <p class="card-text">I am married with 2 boys and 2 dogs.  We enjoy being outside, going on walks, and vacationing in Tennessee</p>
+                <p class="card-text">I am a home-labber with a focus on self hosting services.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-4">
+        <div class="card">
+            <h3 class="card-header">Professional</h3>
+            <div class="card-body">
+                <p class="card-text">I have been a developer for {{developYears}} years.</p>
+                <p class="card-text">Currently I work with .Net Core API developed in C#, and Angular 14 Web Applications.</p>
+                <p class="card-text">Check out the Resume section for more details</p>
+                <a routerLink="/resume" class="card-link">Resume</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-4">
+        <div class="card">
+            <h3 class="card-header">This Application</h3>
+            <div class="card-body">
+                <p class="card-text">This was my first attempt working with Angular 14.  I will continue to update the site as I learn more.</p>
+                <p class="card-text">Feel free to check out my Github page to see the evolution of this application</p>
+                <a href="https://github.com/rsnook50/general-information" class="card-link">Github</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+.row {
+    padding-top: 50px;
+}
+
+.card { 
+    background-color: #455A64;
+    color: #fff;
+    min-height: 250px;
+}
+
+.card-header {
+    background-color: #273f4b;
+}
+
+.banner {
+    background-color: #326279;
+}
+
+a {
+    color: #fff;
+}
