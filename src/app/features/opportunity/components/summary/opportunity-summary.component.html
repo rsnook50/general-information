@@ -1,0 +1,12 @@
+<div *ngIf="opportunities.length">
+    <div *ngFor="let opportunity of opportunities" class="card">
+        <div class="card-body">
+            <h5 class="card-title">{{opportunity.title}}</h5>
+            <h6 class="card-text">{{opportunity.companyName}}</h6>
+            <h6 class="card-text">{{opportunity.startDate}} - {{opportunity.endDate || "Present"}}</h6>
+            <ul *ngIf="opportunity.details.length">
+                <li *ngFor="let detail of opportunity.details">{{detail}}</li>
+            </ul>
+        </div>
+    </div>
+</div>

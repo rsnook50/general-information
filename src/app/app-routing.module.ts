@@ -18,7 +18,7 @@ const routes: Routes = [
       },
       {
         path: "opportunities",
-        loadChildren: () => import("./opportunity/opportunity.module").then(m => m.OpportunityModule)
+        loadChildren: () => import("./features/opportunity/opportunity.module").then(m => m.OpportunityModule)
       }
     ] 
   }
