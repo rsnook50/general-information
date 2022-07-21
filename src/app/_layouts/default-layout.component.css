@@ -56,6 +56,21 @@ body {
   text-align: center;
 }
 
+#sidebar .nav li {
+  width: 100%;
+  background: none;
+  border-bottom: 1px solid #455A64;
+  font-size: 14px;
+  color: #CFD8DC;
+  padding: 16px 24px;
+}
+
+#sidebar .nav>li:last-child {
+  position: absolute;
+  bottom: 0;
+  font-size: 20px;
+}
+
 #sidebar header a {
   color: #fff;
   display: block;
@@ -67,12 +82,9 @@ body {
   cursor: pointer;
 }
 
-#sidebar .nav a{
+#sidebar .nav a {
   background: none;
-  border-bottom: 1px solid #455A64;
   color: #CFD8DC;
-  font-size: 14px;
-  padding: 16px 24px;
 }
 
 #sidebar .nav a:hover{
