@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { WelcomeComponent } from './home/welcome.component';
+import { WelcomeComponent } from './features/welcome/components/welcome.component';
 import { DefaultLayoutComponent } from './_layouts/default-layout.component';
 
 const routes: Routes = [

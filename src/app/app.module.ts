@@ -3,20 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { WelcomeComponent } from './home/welcome.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DefaultLayoutComponent } from './_layouts/default-layout.component';
+import { WelcomeModule } from './features/welcome/welcome.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DefaultLayoutComponent,
-    WelcomeComponent
+    DefaultLayoutComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    WelcomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
