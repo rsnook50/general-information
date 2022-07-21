@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { WelcomeComponent } from './features/welcome/components/welcome.component';
+import { WelcomeContainer } from './features/welcome/containers/welcome.container';
 import { DefaultLayoutComponent } from './_layouts/default-layout.component';
 
 const routes: Routes = [
@@ -10,11 +10,11 @@ const routes: Routes = [
     children: [
       {
         path: "",
-        component: WelcomeComponent
+        component: WelcomeContainer
       },
       {
         path: "resume",
-        loadChildren: () => import("./resume/resume.module").then(m => m.ResumeModule)
+        loadChildren: () => import("./features/resume/resume.module").then(m => m.ResumeModule)
       },
       {
         path: "opportunities",
