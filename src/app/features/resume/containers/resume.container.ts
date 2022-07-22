@@ -2,7 +2,7 @@ import { Component } from "@angular/core";
 
 @Component({
     templateUrl: "./resume.container.html",
-    styleUrls: ["./resume.container.css"]
+    styleUrls: ["./resume.container.scss"]
 })
 
 export class ResumeContainer {}

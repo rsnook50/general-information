@@ -4,7 +4,7 @@ import { IOpportunity } from "../../models/opportunity.model";
 @Component({
     selector: "app-opportunity-list",
     templateUrl: "./opportunity-list.component.html",
-    styleUrls: ["./opportunity-list.component.css"]
+    styleUrls: ["./opportunity-list.component.scss"]
 })
 
 export class OpportunityListCompoent {
