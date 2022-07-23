@@ -1,19 +1,17 @@
-.row {
-    padding-top: 50px;
-}
-
-.card { 
+mat-card { 
     background-color: #455A64;
     color: #fff;
     min-height: 260px;
+    max-width: 500px;
 }
 
-.card-header {
+mat-card-title {
     background-color: #273f4b;
 }
 
 .banner {
     background-color: #326279;
+    min-width: 750px;
 }
 
 a {
