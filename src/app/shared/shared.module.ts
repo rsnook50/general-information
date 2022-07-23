@@ -6,6 +6,7 @@ import { MatDividerModule } from "@angular/material/divider"
 import { MatGridListModule } from "@angular/material/grid-list"
 
 import { PhonePipe } from "./phone.pipe";
+import { FlexLayoutModule } from "@angular/flex-layout";
 
 @NgModule({
     declarations: [
@@ -13,6 +14,7 @@ import { PhonePipe } from "./phone.pipe";
     ],
     imports: [
         CommonModule,
+        FlexLayoutModule,
         MatButtonModule,
         MatCardModule,
         MatDividerModule,
@@ -20,6 +22,7 @@ import { PhonePipe } from "./phone.pipe";
     ],
     exports: [
         CommonModule,
+        FlexLayoutModule,
         MatButtonModule,
         MatCardModule,
         MatDividerModule,
